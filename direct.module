@@ -1,3 +1,4 @@
+#!name=googleplay_direct_list
 [Rule]
 DOMAIN,services.googleapis.cn,DIRECT
 DOMAIN,xn--ngstr-lra8j.com,DIRECT

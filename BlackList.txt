@@ -20,9 +20,6 @@ name: Bin
 *://www.v2ex.com/*
 *://hk.v2ex.com/*
 *://www.foreignaffairs.com/*
-title/.*BBC News 中文/
-title/.*ABC中文/
-title/.*美国之音中文网/
 *://m.cn.nytimes.com/*
 *://www.epochtimes.com/*
 *://www.bannedbook.org/*
@@ -33,3 +30,5 @@ title/.*美国之音中文网/
 *://www.thirdstage-consulting.com/*
 *://pincong.rocks/*
 *://www.ntdtv.com/*
+*://www.nytimes.com/zh-hans/*
+*://www.abc.net.au/chinese/*

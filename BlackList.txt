@@ -36,3 +36,4 @@ name: BlackList
 *://www.sinchew.com.my/*
 *://zh.wikinews.org/*
 *://www.zaobao.com.sg/*
+*://theinitium.com/*

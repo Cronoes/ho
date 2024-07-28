@@ -38,3 +38,4 @@ name: BlackList
 *://www.zaobao.com.sg/*
 *://theinitium.com/*
 *://yibaochina.com/*
+*://cn.v2ex.com/*

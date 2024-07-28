@@ -34,3 +34,4 @@ name: BlackList
 *://www.abc.net.au/chinese/*
 *://cn.epochtimes.com/*
 *://www.sinchew.com.my/*
+*://zh.wikinews.org/*

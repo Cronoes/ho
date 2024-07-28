@@ -1,5 +1,5 @@
 ---
-name: Bin
+name: BlackList
 ---
 *://www.voachinese.com/*
 *://cn.nytimes.com/*

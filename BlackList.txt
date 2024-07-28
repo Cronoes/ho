@@ -37,3 +37,4 @@ name: BlackList
 *://zh.wikinews.org/*
 *://www.zaobao.com.sg/*
 *://theinitium.com/*
+*://yibaochina.com/*

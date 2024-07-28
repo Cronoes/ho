@@ -32,3 +32,4 @@ name: Bin
 *://www.ntdtv.com/*
 *://www.nytimes.com/zh-hans/*
 *://www.abc.net.au/chinese/*
+*://cn.epochtimes.com/*

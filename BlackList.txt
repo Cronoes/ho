@@ -35,3 +35,4 @@ name: BlackList
 *://cn.epochtimes.com/*
 *://www.sinchew.com.my/*
 *://zh.wikinews.org/*
+*://www.zaobao.com.sg/*

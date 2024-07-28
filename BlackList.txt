@@ -17,8 +17,6 @@ name: BlackList
 *://www.zhihu.com/*
 *://zhuanlan.zhihu.com/*
 *://machbbs.com/*
-*://www.v2ex.com/*
-*://hk.v2ex.com/*
 *://www.foreignaffairs.com/*
 *://m.cn.nytimes.com/*
 *://www.epochtimes.com/*
@@ -38,4 +36,4 @@ name: BlackList
 *://www.zaobao.com.sg/*
 *://theinitium.com/*
 *://yibaochina.com/*
-*://cn.v2ex.com/*
+*://*.v2ex.com/*

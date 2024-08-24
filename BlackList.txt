@@ -37,4 +37,4 @@ name: BlackList
 *://theinitium.com/*
 *://yibaochina.com/*
 *://*.v2ex.com/*
-
+*://zh.wikipedia.org/*

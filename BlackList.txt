@@ -38,3 +38,7 @@ name: BlackList
 *://yibaochina.com/*
 *://*.v2ex.com/*
 *://zh.wikipedia.org/*
+*://www.pincong.rocks/*
+*://www.backchina.com/*
+*://*.creaders.net/*
+*://*.wenxuecity.com/*

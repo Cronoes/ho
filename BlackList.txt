@@ -42,3 +42,4 @@ name: BlackList
 *://www.backchina.com/*
 *://*.creaders.net/*
 *://*.wenxuecity.com/*
+*://www.reddit.com/r/China_irl/

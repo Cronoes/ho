@@ -43,3 +43,6 @@ name: BlackList
 *://*.creaders.net/*
 *://*.wenxuecity.com/*
 *://www.reddit.com/r/China_irl/*
+*://*.epochtimes.today/*
+*://www.chenpokongvip.com/*
+*://m.vct.news/*

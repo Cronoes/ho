@@ -101,7 +101,7 @@ RuleSet: &RuleSet {type: http, behavior: classical, interval: 86400, format: yam
 # 策略组
 proxy-groups: 
   - {name: Proxy, type: select, proxies: [自用], icon: 'https://raw.githubusercontent.com/pompurin404/mihomo-party/master/resources/icon.png'}
-  - {name: OpenAI, type: select, include-all: true, filter: *FilterAll, icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png'}
+  - {name: OpenAI, type: select, proxies: [Proxy, 自用], icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png'}
   - {name: Telegram, type: select, proxies: [Proxy, 自用], icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png'}
   - {name: Spotify, type: select, proxies: [Proxy, 自用], icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png'}
   - {name: GlobalMedia, type: select, proxies: [DIRECT, Proxy, 自用], icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png'}

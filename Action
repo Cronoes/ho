@@ -1,160 +1,36 @@
+[custom]
 
-mixed-port: 7890
-#---------------------------------------------------#
-## 配置文件需要放置在 $HOME/.config/clash/*.yaml
-allow-lan: false
-mode: Rule
-log-level: silent
-external-controller: 127.0.0.1:60000
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+ruleset=📢 Google,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
+ruleset=📲 Telegram,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+ruleset=💬 OpenAi,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+ruleset=🌍 国外媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+ruleset=🌏 国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+ruleset=🎯 全球直连,[]GEOIP,CN
+ruleset=🐟 漏网之鱼,[]FINAL
 
-# 节点配置文件统一存放在 ./profiles/proxies/ 目录中
-proxy-providers:
-  # 从链接导入的配置文件
-  SU:
-    type: http
-    path: ./profiles/proxies/su.yaml
-    url: https://example-url
-    interval: 3600 
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
-proxy-groups:
-  - name: PROXY
-    type: url-test
-    interval: 3600 
-    url: http://www.gstatic.com/generate_204
-    use:
-      - su
+;设置规则标志位
 
-# clash-rules项目提供的规则集
-# 规则文件统一存放在 ./profiles/rules/ 目录中
-rule-providers:
+;设置分组标志位
+custom_proxy_group=🚀 节点选择`select`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]DIRECT
+custom_proxy_group=🚀 手动切换`select`.*
+custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=📲 Telegram`select`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]DIRECT
+custom_proxy_group=💬 OpenAi`select`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]DIRECT
+custom_proxy_group=📢 Google`select`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]DIRECT
+custom_proxy_group=🌍 国外媒体`select`[]🚀 节点选择`[]♻️ 自动选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
+custom_proxy_group=🌏 国内媒体`select`[]DIRECT
+custom_proxy_group=🎯 全球直连`select`[]DIRECT
+custom_proxy_group=🐟 漏网之鱼`select`[]🚀 节点选择`[]♻️ 自动选择`[]DIRECT`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换
+;设置分组标志位
 
-  google:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
-    path: ./profiles/rules/google.yaml
-    interval: 86400
+enable_rule_generator=true
+overwrite_original_rules=true
 
-  proxy:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-    path: ./profiles/rules/proxy.yaml
-    interval: 86400
 
-  direct:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
-    path: ./profiles/rules/direct.yaml
-    interval: 86400
-
-  private:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
-    path: ./profiles/rules/private.yaml
-    interval: 86400
-
-  gfw:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
-    path: ./profiles/rules/gfw.yaml
-    interval: 86400
-
-  greatfire:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
-    path: ./profiles/rules/greatfire.yaml
-    interval: 86400
-
-  tld-not-cn:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
-    path: ./profiles/rules/tld-not-cn.yaml
-    interval: 86400
-
-  telegramcidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
-    path: ./profiles/rules/telegramcidr.yaml
-    interval: 86400
-
-  cncidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
-    path: ./profiles/rules/cncidr.yaml
-    interval: 86400
-
-  lancidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
-    path: ./profiles/rules/lancidr.yaml
-    interval: 86400
-
-# 规则
-rules:
-  - PROCESS-NAME,v2ray,DIRECT
-  - PROCESS-NAME,xray,DIRECT
-  - PROCESS-NAME,naive,DIRECT
-  - PROCESS-NAME,trojan,DIRECT
-  - PROCESS-NAME,trojan-go,DIRECT
-  - PROCESS-NAME,ss-local,DIRECT
-  - PROCESS-NAME,privoxy,DIRECT
-  - PROCESS-NAME,leaf,DIRECT
-  - PROCESS-NAME,v2ray.exe,DIRECT
-  - PROCESS-NAME,xray.exe,DIRECT
-  - PROCESS-NAME,naive.exe,DIRECT
-  - PROCESS-NAME,trojan.exe,DIRECT
-  - PROCESS-NAME,trojan-go.exe,DIRECT
-  - PROCESS-NAME,ss-local.exe,DIRECT
-  - PROCESS-NAME,privoxy.exe,DIRECT
-  - PROCESS-NAME,leaf.exe,DIRECT
-  - PROCESS-NAME,Surge,DIRECT
-  - PROCESS-NAME,Surge 2,DIRECT
-  - PROCESS-NAME,Surge 3,DIRECT
-  - PROCESS-NAME,Surge 4,DIRECT
-  - PROCESS-NAME,Surge%202,DIRECT
-  - PROCESS-NAME,Surge%203,DIRECT
-  - PROCESS-NAME,Surge%204,DIRECT
-  - PROCESS-NAME,Thunder,DIRECT
-  - PROCESS-NAME,DownloadService,DIRECT
-  - PROCESS-NAME,qBittorrent,DIRECT
-  - PROCESS-NAME,Transmission,DIRECT
-  - PROCESS-NAME,fdm,DIRECT
-  - PROCESS-NAME,aria2c,DIRECT
-  - PROCESS-NAME,Folx,DIRECT
-  - PROCESS-NAME,NetTransport,DIRECT
-  - PROCESS-NAME,uTorrent,DIRECT
-  - PROCESS-NAME,WebTorrent,DIRECT
-  - PROCESS-NAME,aria2c.exe,DIRECT
-  - PROCESS-NAME,BitComet.exe,DIRECT
-  - PROCESS-NAME,fdm.exe,DIRECT
-  - PROCESS-NAME,NetTransport.exe,DIRECT
-  - PROCESS-NAME,qbittorrent.exe,DIRECT
-  - PROCESS-NAME,Thunder.exe,DIRECT
-  - PROCESS-NAME,ThunderVIP.exe,DIRECT
-  - PROCESS-NAME,transmission-daemon.exe,DIRECT
-  - PROCESS-NAME,transmission-qt.exe,DIRECT
-  - PROCESS-NAME,uTorrent.exe,DIRECT
-  - PROCESS-NAME,WebTorrent.exe,DIRECT
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
-  - DOMAIN,3600000.xyz,PROXY
-  - RULE-SET,private,DIRECT
-  - RULE-SET,google,PROXY
-  - RULE-SET,proxy,PROXY
-  - RULE-SET,direct,DIRECT
-  - RULE-SET,telegramcidr,PROXY
-  - GEOIP,,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,PROXY
+;luck

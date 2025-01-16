@@ -86,7 +86,7 @@ NodeParam: &NodeParam {type: http, interval: 86400, health-check: {enable: true,
 # 锚点 - 节点订阅
 proxy-providers: 
   我的节点:
-    url: '机场的订阅地址'
+    url: '订阅地址'
     <<: *NodeParam
     path: './proxy_provider/Providers.yaml'
 

@@ -1,7 +1,5 @@
-# 深巷有喵的「Clash_Max」配置
-# 日期：2024-10-04
-# 版本：2.1.6
-# 配置作者：https://github.com/Rabbit-Spec
+# 日期：2025-1-16
+# 配置作者：https://github.com/Cronoes
 # 适用版本：所有使用 Mihomo 内核的程序
 
 port: 7890
@@ -104,8 +102,6 @@ proxy-groups:
   - {name: OpenAI, type: select, proxies: [Proxy, 自用], icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ChatGPT.png'}
   - {name: Telegram, type: select, proxies: [Proxy, 自用], icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png'}
   - {name: Spotify, type: select, proxies: [Proxy, 自用], icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png'}
-  - {name: GlobalMedia, type: select, proxies: [DIRECT, Proxy, 自用], icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png'}
-
   - {name: 自用, <<: *FallBack}
 
 # 订阅规则
@@ -149,7 +145,6 @@ rule-providers:
 rules:
  - RULE-SET,Spotify,Spotify
  - RULE-SET,ChinaMedia,DIRECT
- - RULE-SET,GlobalMedia,GlobalMedia
  - RULE-SET,OpenAI,OpenAI
  - RULE-SET,Proxy,Proxy
  - RULE-SET,China,DIRECT

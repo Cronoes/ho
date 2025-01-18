@@ -46,3 +46,4 @@ name: BlackList
 *://*.epochtimes.today/*
 *://www.chenpokongvip.com/*
 *://m.vct.news/*
+*://www.voacantonese.com/*

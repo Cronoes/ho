@@ -47,3 +47,5 @@ name: BlackList
 *://www.chenpokongvip.com/*
 *://m.vct.news/*
 *://www.voacantonese.com/*
+*://www.hostbbs.net/*
+*://*.hostloc.com/*

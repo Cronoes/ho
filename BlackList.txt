@@ -49,3 +49,4 @@ name: BlackList
 *://www.voacantonese.com/*
 *://www.hostbbs.net/*
 *://hostloc.com/*
+*://news.chinanewscenter.com/*

@@ -50,3 +50,4 @@ name: BlackList
 *://www.hostbbs.net/*
 *://hostloc.com/*
 *://news.chinanewscenter.com/*
+*://anticommunism.miraheze.org/*

@@ -52,3 +52,4 @@ name: BlackList
 *://news.chinanewscenter.com/*
 *://anticommunism.miraheze.org/*
 *://www.xf-gcw.com/*
+*://www.kotalpa.com/*

@@ -14,8 +14,7 @@ name: BlackList
 *://www.sbs.com.au/language/chinese/zh-hans*
 *://www.soundofhope.org/*
 *://zh.wikipedia.org/*
-*://www.zhihu.com/*
-*://zhuanlan.zhihu.com/*
+*://*.zhihu.com/*
 *://machbbs.com/*
 *://www.foreignaffairs.com/*
 *://m.cn.nytimes.com/*
@@ -48,7 +47,7 @@ name: BlackList
 *://m.vct.news/*
 *://www.voacantonese.com/*
 *://www.hostbbs.net/*
-*://hostloc.com/*
+*://*.hostloc.com/*
 *://news.chinanewscenter.com/*
 *://anticommunism.miraheze.org/*
 *://www.xf-gcw.com/*

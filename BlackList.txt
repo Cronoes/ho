@@ -47,7 +47,7 @@ name: BlackList
 *://m.vct.news/*
 *://www.voacantonese.com/*
 *://www.hostbbs.net/*
-*://*.hostloc.com/*
+*://hostloc.com/*
 *://news.chinanewscenter.com/*
 *://anticommunism.miraheze.org/*
 *://www.xf-gcw.com/*

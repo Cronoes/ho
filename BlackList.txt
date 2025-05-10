@@ -52,3 +52,7 @@ name: BlackList
 *://anticommunism.miraheze.org/*
 *://www.xf-gcw.com/*
 *://www.kotalpa.com/*
+*://www.uscardforum.com/*
+*://huaren.us/*
+*://www.1point3acres.com/*
+*://www.chineseinla.com/*

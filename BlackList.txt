@@ -56,3 +56,6 @@ name: BlackList
 *://huaren.us/*
 *://www.1point3acres.com/*
 *://www.chineseinla.com/*
+*://www.zhuichaguoji.org/*
+*://www.minghui.org/*
+*://globalrescue.hopto.org/*

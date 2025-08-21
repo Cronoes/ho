@@ -60,3 +60,4 @@ name: BlackList
 *://www.minghui.org/*
 *://globalrescue.hopto.org/*
 *://communistchinadoc.blogspot.com/*
+*://difangwenge.org/*

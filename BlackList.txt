@@ -62,4 +62,4 @@ name: BlackList
 *://globalrescue.hopto.org/*
 *://communistchinadoc.blogspot.com/*
 *://difangwenge.org/*
-*://*.renmenbao.com/*
+*://*.renminbao.com/*

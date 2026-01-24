@@ -63,3 +63,4 @@ name: BlackList
 *://communistchinadoc.blogspot.com/*
 *://difangwenge.org/*
 *://*.renminbao.com/*
+*://*.chinesepen.org/*

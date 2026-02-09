@@ -64,3 +64,4 @@ name: BlackList
 *://difangwenge.org/*
 *://*.renminbao.com/*
 *://*.chinesepen.org/*
+*://*.redchinacn.org/

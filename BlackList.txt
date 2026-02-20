@@ -65,3 +65,4 @@ name: BlackList
 *://*.renminbao.com/*
 *://*.chinesepen.org/*
 *://*.redchinacn.org/
+*://*.langxin.org/*

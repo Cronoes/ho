@@ -74,3 +74,4 @@ name: BlackList
 *://feja.org.tw/*
 *://welovexjp.github.io/*
 *://www.scribd.com/*
+*://newcongress.tw/*

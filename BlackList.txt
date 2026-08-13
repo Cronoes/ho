@@ -76,3 +76,4 @@ name: BlackList
 *://www.scribd.com/*
 *://*.newcongress.tw/*
 *://*.voanews.com/*
+*://*.wikiquote.org/*

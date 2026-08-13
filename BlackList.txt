@@ -72,4 +72,5 @@ name: BlackList
 *://www.rti.org.tw/*
 *://www.hrw.org/*
 *://feja.org.tw/*
-*://welovesjp.github.io/*
+*://welovexjp.github.io/*
+*://www.scribd.com/*

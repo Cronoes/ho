@@ -75,3 +75,4 @@ name: BlackList
 *://welovexjp.github.io/*
 *://www.scribd.com/*
 *://*.newcongress.tw/*
+*://*.voanews.com/*

@@ -5,7 +5,7 @@ name: BlackList
 *://cn.nytimes.com/*
 *://www.bbc.com/zhongwen/*
 *://www.rfa.org/*
-*://www.dw.com/zh/*
+*://www.dw.com/*
 *://cn.wsj.com/*
 *://www.rfi.fr/*
 *://chinadigitaltimes.net/*
@@ -77,3 +77,6 @@ name: BlackList
 *://*.newcongress.tw/*
 *://*.voanews.com/*
 *://*.wikiquote.org/*
+*://*.wikisource.org/*
+*://*.vct.news/*
+*://*.gov.tw/*
